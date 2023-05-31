@@ -1,0 +1,119 @@
+// метод concat
+var array1 = ['a', 'b', 'c'];
+var array2 = ['d', 'e', 'f'];
+var newArray = array1.concat(array2);
+console.log(newArray); // ['a', 'b', 'c', 'd', 'e', 'f']
+
+// метод filter
+var numbers = [1, 2, 3, 4, 5];
+var evenNumbers = numbers.filter(function(number) {
+  return number % 2 === 0;
+});
+console.log(evenNumbers); // [2, 4]
+
+// метод forEach
+var fruits = ['apple', 'banana', 'orange'];
+fruits.forEach(function(fruit) {
+  console.log(fruit);
+}); // выводит в консоль каждый элемент массива fruits: apple, banana, orange
+
+// метод indexOf
+var animals = ['cat', 'dog', 'rabbit', 'monkey'];
+var rabbitPosition = animals.indexOf('rabbit');
+console.log(rabbitPosition); // 2
+
+// метод join
+var colors = ['red', 'green', 'blue'];
+var colorString = colors.join('-');
+console.log(colorString); // 'red-green-blue'
+
+// метод map
+var numbers = [1, 2, 3, 4, 5];
+var squaredNumbers = numbers.map(function(number) {
+  return number * number;
+});
+console.log(squaredNumbers); // [1, 4, 9, 16, 25]
+
+// метод pop
+var numbers = [1, 2, 3];
+var lastNumber = numbers.pop();
+console.log(numbers); // [1, 2]
+console.log(lastNumber); // 3
+
+// метод push
+var animals = ['cat', 'dog'];
+animals.push('rabbit');
+console.log(animals); // ['cat', 'dog', 'rabbit']
+
+// метод reverse
+var letters = ['a', 'b', 'c'];
+letters.reverse();
+console.log(letters); // ['c', 'b', 'a']
+
+// метод shift
+var numbers = [1, 2, 3];
+var firstNumber = numbers.shift();
+console.log(numbers); // [2, 3]
+console.log(firstNumber); // 1
+
+// метод slice
+var colors = ['red', 'green', 'blue'];
+var selectedColors = colors.slice(0, 2);
+console.log(selectedColors); // ['red', 'green']
+
+// метод sort
+var numbers = [3, 1, 4, 2, 5];
+numbers.sort();
+console.log(numbers); // [1, 2, 3, 4, 5]
+
+// метод splice
+var colors = ['red', 'green', 'blue'];
+colors.splice(1, 1, 'yellow', 'orange');
+console.log(colors); // ['red', 'yellow', 'orange', 'blue']
+
+// метод toString
+var animals = ['cat', 'dog', 'rabbit'];
+var animalString = animals.toString();
+console.log(animalString); // 'cat,dog,rabbit'
+
+// метод unshift
+var animals = ['cat', 'dog'];
+animals.unshift('rabbit');
+console.log(animals); // ['rabbit', 'cat', 'dog']
+
+
+// ==================================================================================================================
+
+
+
+// Какую функцию выполняет каждый массив
+
+concat() - объединяет два или более массива в новый массив.
+
+filter() - создает новый массив, содержащий только элементы, которые прошли проверку на соответствие условию, указанному в предоставленной функции.
+
+forEach() - выполняет указанную функцию один раз для каждого элемента массива.
+
+indexOf() - возвращает индекс (позицию) первого вхождения указанного элемента в массиве, или -1, если элемент не найден.
+
+join() - объединяет все элементы массива в строку, используя указанный разделитель.
+
+map() - создает новый массив, содержащий результат вызова указанной функции для каждого элемента массива.
+
+pop() - удаляет последний элемент из массива и возвращает его значение.
+
+push() - добавляет один или более элементов в конец массива и возвращает новую длину массива.
+
+reverse() - меняет порядок элементов массива на обратный.
+
+shift() - удаляет первый элемент из массива и возвращает его значение.
+
+slice() - создает новый массив, содержащий копию указанного диапазона элементов из оригинального массива.
+
+sort() - сортирует элементы в массиве в алфавитном порядке или по числовому значению.
+
+splice() - добавляет или удаляет элементы из массива.
+
+toString() - возвращает строковое представление массива.
+
+unshift() - добавляет один или более элементов в начало массива и возвращает новую длину массива.
