@@ -1,0 +1,7 @@
+(num === 50) ? console.log('Ok!') : console.log('Error');
+	     if                 else
+
+?, : -Тирнарные операторы
+
+if - ?;
+else - :;

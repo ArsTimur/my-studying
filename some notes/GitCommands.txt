@@ -1,0 +1,21 @@
+git pull - используется для извлечения и загрузки содержимого из удаленного репозитория и немедленного обновления локального репозитория этим содержимым.
+git push - Отправка всех обновлений в коде на удлаенный сервер в репозиторий
+
+Первая команда git add -A добавляет все измененные файлы в индекс. А вторая команда создает коммит. git add -A git commit -m "Commit message."
+
+
+?????
+
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:undefined2004/test.git
+git push -u origin main
+
+????
+
+git remote add origin git@github.com:undefined2004/test.git
+git branch -M main
+git push -u origin main
