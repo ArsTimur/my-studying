@@ -1,1 +1,1 @@
-
+Abstract from the course
