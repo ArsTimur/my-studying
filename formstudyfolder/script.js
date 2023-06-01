@@ -138,3 +138,93 @@
 
 // console.log(persone.userAge = 30)
 // console.log(persone.userInfo);
+
+
+//////////////////////////////////////////
+
+
+// class User {
+//   constructor(name, age) {
+//     this.name = name;
+//     this._age = age;
+//   }
+//   //
+
+//   #surname = "Arslangereev";
+//   say = () => {
+//     console.log(
+//       `Имя пользователя:${this.name} ${this.#surname}, возраст ${this._age}`
+//     );
+//   };
+
+//   get age() {
+//     return this._age;
+//   }
+
+//   set age(age) {
+//     if (typeof age === "number" && age > 0 && age < 110) {
+//       this._age = age;
+//     } else {
+//       console.log("Недопустимое значение");
+//     }
+//   }
+// }
+
+// const ivan = new User("Ivan", 27);
+// console.log(ivan.surname);
+// ivan.say();
+
+
+
+
+//Инкапсуляция и Прием модуль// Добавленно 01:06:2023
+// class Car {
+
+//   constructor(brand, options) {
+//     this.brand = brand;
+//     this._options = options;
+//   }
+
+//   #model = 'ClS 63';
+
+//   say() {
+//     console.log(`Я передвигался на автомобиле марки ${this.brand}, и самое главное модели ${this.#model}, имеющаяя под капотом ${this._options}hp`);
+
+//   }
+//   #sayNotRigh 
+//   get options() {
+//     return this._options;
+//   }
+
+//   set options(options) {
+//     if(this._options === 585) {
+        
+//     } else {
+//       console.log('Не верно она не имееет столько сил')
+//     }
+//   }
+// }
+// const cls = new Car('Mercedes Benz', 585);
+
+
+// cls.say();
+
+// // Создание анонимных функций
+// const number = 1;
+// (function(){
+//   let number = 2;
+//   console.log(number);
+//   console.log(number + 3)
+// }());
+// console.log(number);
+
+// const user = (function(){
+//   const privat = function () {
+//     console.log('Я приватная')
+//   }
+//   return {
+//     sayHello: privat
+//   }
+// }());
+// user.sayHello();
+
